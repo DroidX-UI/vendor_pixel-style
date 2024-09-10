@@ -16,6 +16,7 @@
 
 # Google Overlays
 PRODUCT_PACKAGES += \
+    AvatarPickerPixelOverlay \
     CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
     DMServiceOverlay \
@@ -32,9 +33,9 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
+    PixelConnectivityOverlay2024 \
     PixelContactsProviderOverlay \
     PixelDocumentsUIGoogleOverlay \
-    PixelFlipendoOverlay \
     PixelFwOverlay \
     PixelLauncherBlurOverlay \
     PixelLauncherIconsOverlay \
@@ -45,6 +46,7 @@ PRODUCT_PACKAGES += \
     PixelTelecomOverlay \
     PixelTelephonyProviderOverlay \
     SettingsGoogleOverlay \
+    SettingsGoogleOverlayEvolutionX \
     SystemUIGoogleOverlay \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022

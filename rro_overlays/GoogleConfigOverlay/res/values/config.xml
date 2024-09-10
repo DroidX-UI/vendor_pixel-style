@@ -32,6 +32,9 @@
     <!-- Component name that should be granted Notification Assistant access -->
     <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
 
+    <!-- Component name that should be granted Notification Assistant access -->
+    <string name="config_defaultAssistantAccessComponent" translatable="false">com.google.android.ext.services/android.ext.services.notification.Assistant</string>
+
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
          without explicit consent of the user. If no autofill service with the
@@ -43,6 +46,18 @@
          POST_NOTIFICATIONS permission.
     -->
     <!--string name="config_defaultCaptivePortalLoginPackageName" translatable="false">com.google.android.captiveportallogin</string>-->
+
+    <!-- The component name, flattened to a string, for the system's credential manager
+      autofill service. This service allows interceding autofill requests and routing
+      them to credential manager.
+
+     This service must be trusted, as it can be activated without explicit consent of the user.
+     If no service with the specified name exists on the device, autofill will still
+     work with the user configured autofill service
+
+     See android.credentials.CredentialManager
+    -->
+    <string name="config_defaultCredentialManagerAutofillService" translatable="false">com.android.credentialmanager/com.android.credentialmanager.autofill.CredentialAutofillService</string>
 
     <!-- The component name, flattened to a string, for the system's credential manager
       hybrid service. This service allows credential retrieval and storage from, and to
@@ -79,7 +94,7 @@
 
     <!-- Component name that accepts ACTION_SEND intents for nearby (proximity-based) sharing.
          Used by ChooserActivity. -->
-    <string name="config_defaultNearbySharingComponent" translatable="false">com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity</string>
+    <string name="config_defaultNearbySharingComponent" translatable="false">com.google.android.gms/com.google.android.gms.nearby.sharing.send.SendActivity</string>
 
     <!-- The package name of the default network recommendation app.
          A network recommendation provider must:
@@ -116,6 +131,13 @@
 
     <!-- Package name of Health Connect data migrator application.  -->
     <string name="config_healthConnectMigratorPackageName" translatable="false">com.google.android.apps.healthdata</string>
+
+    <!-- Name of the default framework dialog that is used to get or save an app credential.
+
+    This UI should be always launch-able and is used as a fallback when an oem replacement activity
+    (defined at config_oemCredentialManagerDialogComponent) is undefined / not found. -->
+    <string name="config_credentialManagerDialogComponent" translatable="false"
+            >com.google.android.gms/.identitycredentials.ui.CredentialChooserActivity</string>
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
@@ -349,6 +371,16 @@
         <item>com.google.</item>
         <item>com.android.</item>
     </string-array>
+
+    <!-- Action for opening identity check settings page [CHAR LIMIT=NONE] [DO NOT TRANSLATE] -->
+    <string name="identity_check_settings_action">com.google.android.gms.personalsafety.settings.IDENTITY_CHECK_SWITCH</string>
+
+    <!-- Package for opening identity check settings page [CHAR LIMIT=NONE] [DO NOT TRANSLATE] -->
+    <string name="identity_check_settings_package_name">com.google.android.gms</string>
+
+   <!-- Whether to enable the biometric notification for dual-modality device that enrolled a
+         single biometric and experiences high FRR. -->
+    <bool name="config_biometricFrrNotificationEnabled">true</bool>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
          app standby.  These are not enabled by default because they require a standard
