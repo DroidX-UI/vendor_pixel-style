@@ -58,4 +58,14 @@
     <string name="account_confirmation_class">com.google.android.gms.auth.uiflows.factoryreset.PreFactoryResetActivity</string>
     <string name="account_confirmation_package">com.google.android.gms</string>
     <string name="oem_preferred_feedback_reporter">com.google.android.gms</string>
+
+    <!-- Sound picker package name -->
+    <string name="config_sound_picker_package_name" translatable="false">
+        com.google.android.soundpicker
+    </string>
+
+    <!-- Contacts package name -->
+    <string name="config_contacts_package_name" translatable="false">
+        com.google.android.contacts
+    </string>
 </resources>
