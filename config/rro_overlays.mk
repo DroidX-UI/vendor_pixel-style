@@ -45,7 +45,6 @@ PRODUCT_PACKAGES += \
     PixelTelecomOverlay \
     PixelTelephonyProviderOverlay \
     SettingsGoogleOverlay \
-    SystemUIGXOverlay \
     SystemUIGoogleOverlay \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022
