@@ -51,18 +51,18 @@ PRODUCT_PACKAGES += \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022
 
-ifneq ($(filter sailfish marlin walleye taimen blueline crosshatch sargo bonito flame coral sunfish bramble redfin barbet oriole raven bluejay panther cheetah lynx tangorpro felix shiba husky akita comet tokay caiman komodo, $(LINEAGE_BUILD)),)
+ifneq ($(filter sailfish marlin walleye taimen blueline crosshatch sargo bonito flame coral sunfish bramble redfin barbet oriole raven bluejay panther cheetah lynx tangorpro felix shiba husky akita comet tokay caiman komodo, $(DROIDX_BUILD)),)
 PRODUCT_PACKAGES += \
     ManagedProvisioningPixelOverlay \
     PixelBatteryHealthOverlay
 endif
 
-ifneq ($(filter flame coral redfin oriole raven panther cheetah lynx felix shiba husky akita comet tokay caiman komodo, $(LINEAGE_BUILD)),)
+ifneq ($(filter flame coral redfin oriole raven panther cheetah lynx felix shiba husky akita comet tokay caiman komodo, $(DROIDX_BUILD)),)
 PRODUCT_PACKAGES += \
     DreamlinerOverlay
 endif
 
-ifneq ($(filter panther cheetah lynx felix shiba husky akita tokay caiman komodo, $(LINEAGE_BUILD)),)
+ifneq ($(filter panther cheetah lynx felix shiba husky akita tokay caiman komodo, $(DROIDX_BUILD)),)
 PRODUCT_PACKAGES += \
     ClearCallingOverlay
 endif
